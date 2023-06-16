@@ -39,6 +39,7 @@ namespace Northwind
            // services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
             //set the time of token validity by adding the below code to the ConfigureServices 
             services.Configure<DataProtectionTokenProviderOptions>(opts => opts.TokenLifespan = TimeSpan.FromHours(10));
+            //services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
 
 
             // var emailConfig = Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
